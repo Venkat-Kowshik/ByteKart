@@ -6,6 +6,7 @@ import cookieParser from 'cookie-parser'
 import morgan from 'morgan'
 import helmet, { crossOriginEmbedderPolicy } from 'helmet'
 import connectDB from './config/connectDB.js'
+import userRouter from './route/user.route.js'
 
 
 const app = express()
@@ -39,3 +40,5 @@ app.get("/",(request,response)=>{
         message: "Kudos Amigo, Server is Running",
     })
 })
+
+app.use('/api/user',userRouter)

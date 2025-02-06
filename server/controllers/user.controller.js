@@ -1,6 +1,7 @@
-import UserModel from '../models/usermodel'
-import bcrypths from "bcryptjs"
-import verifyEmailTemplate from '../utils/verifyEmailTemplate'
+import UserModel from '../models/usermodel.js'
+import bcryptjs from "bcryptjs"
+import verifyEmailTemplate from '../utils/verifyEmailTemplate.js'
+import sendEmail from '../config/sendEmail.js'
 export async function registerUserController(request,response){
     try {
         const {name,email,password} =request.body

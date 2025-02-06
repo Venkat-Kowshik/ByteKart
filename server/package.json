@@ -2,6 +2,7 @@
   "name": "server",
   "version": "1.0.0",
   "main": "index.js",
+  "type":"module",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"
@@ -20,6 +21,8 @@
     "mongoose": "^8.9.7",
     "morgan": "^1.10.0",
     "nodemon": "^3.1.9",
+    "package.json": "^2.0.1",
     "resend": "^4.1.2"
-  }
+  },
+  "devDependencies": {}
 }
